@@ -1,0 +1,275 @@
+/* HTML TAGS =============================================================== */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+
+/* Individuals --------------------------------------------------------------*/
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100vw;
+  min-height: 100dvh;
+  padding: 2.4rem 3rem 4rem;
+  background-color: var(--th-primary);
+  color: var(--th-text);
+  font-family: var(--fo-base);
+  font-size: 16px;
+  font-weight: var(--fo-regular);
+}
+
+button {
+  border: 1px solid transparent;
+  text-decoration: none;
+}
+
+dialog {
+  margin: 2rem;
+  padding: 1rem 2rem;
+  border: 1px solid var(--th-shadow);
+  border-radius: .4rem;
+  background-color: var(--th-background);
+}
+
+dialog::backdrop {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+del {
+  border-radius: 0.4rem;
+  background-color: var(--th-error);
+}
+
+details {
+  margin-bottom: .5rem;
+  border: 0px solid var(--th-shadow);
+  border-left-width: 3px;
+  background-color: var(--th-secondary);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+hr {
+  margin: 1rem;
+}
+
+img {
+  display: block;
+}
+
+img:not([alt]) {
+  border: 0.2rem solid red;
+}
+
+label:first-child {
+  margin: 0;
+}
+
+li {
+  margin-bottom: 0.25rem;
+}
+
+main {
+  min-height: 99vh;
+  padding: 2rem 4rem;
+  border-radius: 0.4rem;
+  background-color: var(--th-background);
+}
+
+ins {
+  border-radius: 0.4rem;
+  background-color: var(--th-warning);
+}
+
+mark {
+  border-radius: 0.4rem;
+  background-color: var(--th-highlight);
+}
+
+p {
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
+textarea {
+  display: block;
+}
+
+::file-selector-button {
+  margin-right: .8rem;
+}
+
+/* Groups -------------------------------------------------------------------*/
+
+a:link, a:visited {
+  color: var(--th-primary);
+  text-decoration: underline;
+}
+
+b, strong {
+  font-weight: var(--fo-bold);
+}
+
+button, summary,
+input[type="submit"] {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  outline: none;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+button,
+input[type="submit"] {
+  justify-content: center;
+  padding: 0.5rem 1rem;
+  border-radius: .5rem;
+  background-color: var(--th-primary);
+  color: var(--th-secondary);
+  font-weight: var(--fo-bold);
+  user-select: none;
+}
+
+button:hover,
+input[type="submit"]:hover {
+  outline: 4px solid var(--th-highlight);
+}
+
+h1, h2, h3, h4,
+h5, h6 {
+  margin: 2rem 0 0.5rem;
+  font-family: var(--fo-primary);
+  font-weight: var(--fo-bold);
+}
+
+input,
+textarea {
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--th-border);
+  border-radius: .4rem;
+  background-color: var(--th-secondary);
+  color: var(--th-text);
+}
+
+input:focus,
+textarea:focus {
+  border-color: var(--th-primary);
+  outline: none;
+  color: var(--th-text);
+}
+
+pre, code {
+  margin: .25rem 0;
+  padding: 0 .8rem;
+  border: 1px solid var(--th-shadow);
+  border-radius: 0.4rem;
+  background-color: var(--th-border);
+}
+
+ul, ol {
+  margin: 1rem 0;
+  padding-left: 1rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+/* Rules --------------------------------------------------------------------*/
+
+details[open] > summary {
+  background-color: var(--th-shadow);
+  color: var(--th-secondary);
+}
+
+details[open] > summary::before {
+  content: "-";
+  position: absolute;
+  right: 1rem;
+}
+
+details > summary::before {
+  content: "+";
+  position: absolute;
+  right: 1rem;
+}
+
+details > summary {
+  position: relative;
+  padding: 1rem;
+  font-weight: var(--fo-medium);
+}
+
+details > div {
+  position: relative;
+  padding: 1rem;
+  background-color: var(--th-secondary);
+}
+
+ul > p,
+ol > p {
+  margin-bottom: .3rem;
+  margin-left: -1rem !important;
+}
+
+ul ul,
+ol ol {
+  margin: 0 !important;
+  padding-left: 2rem !important;
+}
+
+input + label {
+  margin-left: 1rem;
+}
+
+label + input {
+  margin-left: 1rem;
+}
+
+label > * {
+  display: block;
+}
+
+label > p {
+  margin-bottom: .25rem;
+}
+
+pre > code {
+  all: revert;
+}
+
+table th {
+  border-bottom: 1px solid var(--th-shadow);
+  background-color: var(--th-shadow);
+  text-align: left;
+}
+
+table tr:hover {
+  background-color: var(--th-secondary);
+}
+
+table thead,
+table th {
+  font-weight: var(--fo-bold);
+}
+
+table th,
+table td {
+  padding: 0.5rem;
+}
+
+table td {
+  border-bottom: 1px solid var(--th-shadow);
+}
