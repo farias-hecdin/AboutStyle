@@ -1,6 +1,6 @@
 # AboutStyle
 
-AboutStyle makes it easy to style your small front-end projects with CSS.
+A minimalistic framework that makes it easy to style small front-end projects with CSS.
 
 ## Description
 
