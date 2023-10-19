@@ -1,29 +1,57 @@
-# AboutStyle
+# Astro Starter Kit: Basics
 
-A minimalistic framework that makes it easy to style small front-end projects with CSS.
-
-## Description
-
-AboutStyle is a CSS framework designed with the intention of providing a simple stylesheet that facilitates the prototyping and development of small front-end projects.
-
-AboutStyle was inspired by excellent frameworks and tools like [Beer CSS](https://www.beercss.com/) and [Master CSS](https://css.master.co/), so you will find styles for the most common HTML elements, as well as basic ready-to-use components. It also includes utility CSS classes for layout, colors, spacing, and dimensions, which you can use whenever you need them.
-
-The philosophy behind AboutStyle is to keep it simple and focused only on the essentials. It doesn't strive to be the most comprehensive CSS framework in the market; it's only meant to be useful for simple prototypes and small personal projects.
-
-## Installation
-
-1. Clone this repository to your local machine.
-
-```bash
-git clone https://github.com/farias-hecdin/AboutStyle.git
+```sh
+npm create astro@latest -- --template basics
 ```
 
-2. Take the `about_style-min.css` file and embed the following code snippet into your project.
+[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
+[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
 
-```html
-<link rel='stylesheet' href='about_style-min.css'/>
+> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+
+![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
+
+## 🚀 Project Structure
+
+Inside of your Astro project, you'll see the following folders and files:
+
+```text
+/
+├── public/
+│   └── favicon.svg
+├── src/
+│   ├── components/
+│   │   └── Card.astro
+│   ├── layouts/
+│   │   └── Layout.astro
+│   └── pages/
+│       └── index.astro
+└── package.json
 ```
 
-## License
+Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file
+name.
 
-AboutStyle is under the MIT license. See the `LICENSE` file for more information
+There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact
+components.
+
+Any static assets, like images, can be placed in the `public/` directory.
+
+## 🧞 Commands
+
+All commands are run from the root of the project, from a terminal:
+
+| Command                   | Action                                           |
+| :------------------------ | :----------------------------------------------- |
+| `npm install`             | Installs dependencies                            |
+| `npm run dev`             | Starts local dev server at `localhost:4321`      |
+| `npm run build`           | Build your production site to `./dist/`          |
+| `npm run preview`         | Preview your build locally, before deploying     |
+| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
+| `npm run astro -- --help` | Get help using the Astro CLI                     |
+
+## 👀 Want to learn more?
+
+Feel free to check [our documentation](https://docs.astro.build) or jump into our
+[Discord server](https://astro.build/chat).

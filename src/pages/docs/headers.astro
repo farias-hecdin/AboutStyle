@@ -1,0 +1,24 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import ComponentViewer from '../../components/features/ComponentViewer.astro';
+import Breadcrumbs from '../../components/features/Breadcrumbs.astro';
+import HeaderBase from '../../components/base/header/HeaderBase.astro';
+import HeaderBaseTemplate from '../../components/base/header/HeaderBase.template.js';
+
+const crumbs = [
+{ url: '/', title: 'Home' },
+{ url: '/docs/headers', title: 'Headers' },
+];
+let lang = 'html';
+---
+
+<Layout title="Headers - AboutStyle">
+  <main>
+    <h1 class="bb-normal pb-1">Headers</h1>
+    <Breadcrumbs pCrumbs={crumbs} />
+    <h2>Base</h2>
+    <ComponentViewer pSource={HeaderBaseTemplate} pLang={lang}>
+      <HeaderBase />
+    </ComponentViewer>
+  </main>
+</Layout>

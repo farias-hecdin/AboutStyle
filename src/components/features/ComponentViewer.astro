@@ -1,0 +1,20 @@
+---
+const { pLang, pSource } = Astro.props;
+---
+
+<section>
+  <div class="pa-2 bg-background ra-1 bo-normal bc-shadow">
+    <slot />
+  </div>
+  <details class="mt-2 ra-1">
+    <summary>Show source</summary>
+    <div>
+      <div class="">
+        <p class="fc-secondary bg-primary ra-1 mb-0 ptb-1 prl-4 ft-upper">{pLang}</p>
+        <pre>
+        <code class="ov-auto">{pSource}</code>
+        </pre>
+      </div>
+    </div>
+  </details>
+</section>

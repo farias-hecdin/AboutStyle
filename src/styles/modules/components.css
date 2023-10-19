@@ -1,98 +1,24 @@
 /* COMPONENTS ============================================================== */
 
-/* Card ------------------------------------------------------------------- */
-
-.card {
-  display: flex;
-  flex-direction: column;
-  border: 1px solid var(--th-border);
-  border-radius: 0.5rem;
-  background-color: var(--th-secondary);
+.material-symbols-outlined {
+  font-variation-settings:
+    'FILL' 0,
+    'wght' 300,
+    'GRAD' 0,
+    'opsz' 48;
 }
 
-.card img {
-  width: 100%;
+.layer {
+  padding: 2.4rem 3rem 4rem;
+  background-color: var(--th-primary);
+  & > main {
+    min-height: 99vh;
+    padding: 2rem 4rem;
+    border-radius: 0.5rem;
+    background-color: var(--th-background);
+  }
 }
 
-.card section {
-  padding: .8rem 1rem 1rem;
-}
-
-.card header {
-  margin-bottom: .25rem;
-  font-family: var(--fo-primary);
-  font-size: 17px;
-  font-weight: var(--fo-bold);
-}
-
-.card footer {
-  display: flex;
-  justify-content: flex-end;
-  margin-top: 1rem;
-}
-
-/* Card, style 2 */
-
-.card.--style2 {
-  padding: .8rem;
-}
-
-.card.--style2 img {
-  border-radius: .4rem;
-}
-
-.card.--style2 section {
-  margin-top: .8rem;
-  padding: 0;
-}
-
-/* Card, style 3 */
-
-.card.--style3 {
-  flex-direction: row;
-  align-items: flex-start;
-  gap: 1rem;
-  padding: .8rem;
-}
-
-.card.--style3 img {
-  width: 9rem;
-  border-radius: .4rem;
-}
-
-.card.--style3 footer {
-  padding: 0;
-}
-
-.card.--style3 section {
-  min-width: 5rem;
-  padding: 0;
-}
-
-/* Buttons ----------------------------------------------------------------- */
-
-button.--ghost {
-  border: 2px solid var(--th-shadow);
-  background-color: var(--th-light);
-  color: var(--th-shadow);
-}
-
-button.--dashed {
-  border: 2px dashed var(--th-text);
-  background-color: var(--th-secondary);
-  color: var(--th-text);
-}
-
-button.--outline {
-  border: 1px solid var(--th-border);
-  background-color: var(--th-secondary);
-  color: var(--th-text);
-}
-
-button.--tonal {
-  background-color: var(--th-border);
-  color: var(--th-text);
-}
 
 /* Items ------------------------------------------------------------------- */
 
@@ -105,10 +31,10 @@ button.--tonal {
   justify-content: space-between;
   align-items: center;
   gap: 2rem;
-  padding: .8rem 2rem;
+  padding: 0.8rem 2rem;
   border: 1px solid var(--th-border);
-  border-radius: .4rem;
-  background-color: var(--th-secondary);
+  border-radius: 0.4rem;
+  background: var(--th-secondary);
 }
 
 .items li > label {
@@ -122,7 +48,7 @@ button.--tonal {
 
 .tabs {
   display: flex;
-  margin-bottom: .5rem;
+  margin: 0 0 0.5rem;
   border-bottom: 1px solid var(--th-shadow);
   list-style: none;
 }
@@ -132,11 +58,11 @@ button.--tonal {
 }
 
 .tabs label {
-  padding: .5rem 1rem;
+  padding: 0.5rem 1rem;
   font-weight: var(--fo-bold);
 }
 
-.tabs input:checked + label  {
+.tabs input:checked + label {
   border-bottom: 2px solid var(--th-primary);
   color: var(--th-primary);
 }
@@ -163,25 +89,25 @@ button.--tonal {
   bottom: 0;
   right: 0;
   border-radius: 34px;
-  background-color: var(--th-shadow);
-  transition: .4s;
+  background: var(--th-shadow);
+  transition: 0.4s;
   cursor: pointer;
 }
 
 .slider:before {
-  content: "";
+  content: '';
   position: absolute;
   left: 4px;
   bottom: 4px;
   width: 26px;
   height: 26px;
   border-radius: 50%;
-  background-color: white;
-  transition: .4s;
+  background: white;
+  transition: 0.4s;
 }
 
 .switch > input:checked + .slider {
-  background-color: var(--th-primary);
+  background: var(--th-primary);
 }
 
 .switch > input:focus + .slider {

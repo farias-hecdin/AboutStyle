@@ -1,0 +1,91 @@
+/* Other --------------------------------------------------------------------*/
+
+/* overflow */
+
+.ov-auto {
+  overflow: auto;
+}
+.ov-hidden {
+  overflow: hidden;
+}
+.ov-x {
+  overflow-x: auto;
+}
+.ov-y {
+  overflow-y: auto;
+}
+
+/* position */
+
+.po-relative {
+  position: relative;
+}
+.po-sticky {
+  position: sticky;
+  top: 0;
+}
+.po-fixed {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+/* inline and block */
+
+.di-block {
+  display: block;
+}
+.di-inline {
+  display: inline-flex;
+}
+
+/* hover and opacity */
+
+.opacity {
+  opacity: 0.25;
+  transition: 0.2s;
+}
+
+.hover:hover {
+  border-radius: 0;
+  outline: 0.25rem solid var(--th-highlight);
+}
+
+/* Various */
+
+.of-cover {
+  object-fit: cover;
+}
+
+/* none */
+
+.no-list > li {
+  list-style: none;
+}
+.no-display {
+  display: none;
+}
+.no-select {
+  user-select: none;
+}
+.no-link {
+  &:link,
+  &:active,
+  &:visited {
+    color: var(--th-text);
+    text-decoration: none;
+  }
+}
+
+/* Watch */
+
+.wa-this {
+  outline: 0.125rem dashed var(--th-accent);
+}
+
+.wa-all * {
+  outline: 0.125rem dashed var(--th-accent);
+}

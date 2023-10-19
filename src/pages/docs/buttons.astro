@@ -1,0 +1,26 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import ComponentViewer from '../../components/features/ComponentViewer.astro';
+import Breadcrumbs from '../../components/features/Breadcrumbs.astro';
+import ButtonBase from '../../components/base/button/ButtonBase.astro';
+import ButtonBaseTemplate from '../../components/base/button/ButtonBase.template.js';
+
+const crumbs = [
+{ url: '/', title: 'Home' },
+{ url: '/docs/buttons', title: 'Buttons' },
+];
+let lang = 'html';
+---
+
+<Layout title="Buttons - AboutStyle">
+  <main>
+    <h1 class="bb-normal pb-1">Buttons</h1>
+    <Breadcrumbs pCrumbs={crumbs} />
+    <h2>Base</h2>
+    <ComponentViewer pSource={ButtonBaseTemplate} pLang={lang}>
+      <div class="di-flex ai-center ga-2 he-9">
+        <ButtonBase />
+      </div>
+    </ComponentViewer>
+  </main>
+</Layout>

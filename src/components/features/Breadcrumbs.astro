@@ -1,0 +1,18 @@
+---
+const data = [{ url: '/', title: 'Home' }];
+
+const { pCrumbs = data } = Astro.props;
+---
+
+<nav class="di-flex">
+  {
+    pCrumbs.map(elem => (
+      <>
+        <a class="mr-1" href={elem.url}>
+          {elem.title}
+        </a>
+        <span class="mr-1">/</span>
+      </>
+    ))
+  }
+</nav>

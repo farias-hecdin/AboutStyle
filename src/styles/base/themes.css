@@ -1,18 +1,18 @@
-/* THEMES ================================================================== */
+/* Themes ------------------------------------------------------------------ */
 
-body[data-theme="normal"] {
-  --th-background: #EFF4FF;
-  --th-primary:    #1C7ED6;
-  --th-secondary:  #FFFFFF;
-  --th-border:     #DEE7FB;
-  --th-highlight:  #FFE7A8;
-  --th-shadow:     #ACC0E6;
-  --th-text:       #243145;
-  --th-accent:     #F03E3E;
-  --th-error:      #F8BBD0;
-  --th-warning:    #FFFF9F;
-  --th-info:       #66BB6A;
-  --th-light:      #F7F9FE;
-  --th-dark:       #384760;
-  --th-blank:  transparent;
+:root {
+  --th-background: #eff4ff;
+  --th-primary: #1c7ed6;
+  --th-secondary: #ffffff;
+  --th-border: #dee7fb;
+  --th-highlight: #ffe7a8;
+  --th-shadow: #acc0e6;
+  --th-text: #243145;
+  --th-accent: #f03e3e;
+  --th-error: #f8bbd0;
+  --th-warning: #ffff9f;
+  --th-info: #66bb6a;
+  --th-light: #f7f9fe;
+  --th-dark: #384760;
+  --th-blank: transparent;
 }

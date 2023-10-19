@@ -1,0 +1,25 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import ComponentViewer from '../../components/features/ComponentViewer.astro';
+import Breadcrumbs from '../../components/features/Breadcrumbs.astro';
+import InputBase from "../../components/base/input/InputBase.astro"
+import InputBaseTemplate from "../../components/base/input/InputBase.template.js"
+
+const crumbs = [
+{ url: '/', title: 'Home' },
+{ url: '/docs/inputs', title: 'Inputs' },
+];
+let lang = 'html';
+---
+
+<Layout title="Inputs - AboutStyle">
+  <main>
+    <h1 class="bb-normal pb-1">Inputs</h1>
+    <Breadcrumbs pCrumbs={crumbs} />
+    <h2>Base</h2>
+    <ComponentViewer pSource={InputBaseTemplate} pLang={lang}>
+        <InputBase />
+    </ComponentViewer>
+  </main>
+</Layout>
+

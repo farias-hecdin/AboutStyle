@@ -1,0 +1,45 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import ComponentViewer from '../../components/features/ComponentViewer.astro';
+import Breadcrumbs from '../../components/features/Breadcrumbs.astro';
+import CardBase from '../../components/base/card/CardBase.astro';
+import CardBaseTemplate from '../../components/base/card/CardBase.template.js';
+import CardProduct from '../../components/base/card/CardProduct.astro';
+import CardProductTemplate from '../../components/base/card/CardProduct.template.js';
+import CardHoriz from '../../components/base/card/CardHoriz.astro';
+import CardHorizTemplate from '../../components/base/card/CardHoriz.template.js';
+
+const crumbs = [
+{ url: '/', title: 'Home' },
+{ url: '/docs/cards', title: 'Cards' },
+];
+let lang = 'html';
+---
+
+<Layout title="Cards - AboutStyle">
+  <main>
+    <h1 class="bb-normal pb-1">Cards</h1>
+    <Breadcrumbs pCrumbs={crumbs} />
+    <h2>Base</h2>
+    <ComponentViewer pSource={CardBaseTemplate} pLang={lang}>
+      <div class="di-flex ga-5">
+        <CardBase />
+        <CardBase />
+      </div>
+    </ComponentViewer>
+    <h2>Product</h2>
+    <ComponentViewer pSource={CardProductTemplate} pLang={lang}>
+      <div class="di-flex ga-5">
+        <CardProduct />
+        <CardProduct />
+      </div>
+    </ComponentViewer>
+    <h2>Horizontal</h2>
+    <ComponentViewer pSource={CardHorizTemplate} pLang={lang}>
+      <div class="di-flex ga-5">
+        <CardHoriz />
+        <CardHoriz />
+      </div>
+    </ComponentViewer>
+  </main>
+</Layout>
